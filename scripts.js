@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         data.countries.forEach(country => {
            
             country.cities.forEach(city => {
-                if (city.name.toLowerCase().includes(query)) {
+                if (city.name.toLowerCase().includes(query) || city || cities) {
                     results.push({
                         name: city.name,
                         imageUrl: city.imageUrl,
